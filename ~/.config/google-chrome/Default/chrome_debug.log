@@ -1,0 +1,24 @@
+[5425:5425:1013/022400.506426:WARNING:chrome_main_delegate.cc(744)] This is Chrome version 127.0.6533.119 (not a warning)
+[5425:5425:1013/022401.079021:INFO:chrome_browser_cloud_management_controller.cc(196)] No machine level policy manager exists.
+[5425:5425:1013/022401.748186:WARNING:browser_management_service.cc(128)] EnterpriseLogoUrl fetch failed with error code -1 and MIME type 
+[5473:5473:1013/022402.856171:WARNING:sandbox_linux.cc(430)] InitializeSandbox() called with multiple threads in process gpu-process.
+[5425:5425:1013/022403.689266:WARNING:bluez_dbus_manager.cc(248)] Floss manager not present, cannot set Floss enable/disable.
+[5425:5425:1013/022404.244079:ERROR:object_proxy.cc(576)] Failed to call method: org.freedesktop.ScreenSaver.GetActive: object_path= /org/freedesktop/ScreenSaver: org.freedesktop.DBus.Error.NotSupported: This method is not implemented
+[5425:5425:1013/022407.785144:INFO:CONSOLE(168)] "This user comes from SRN or custom network", source: https://onelinksmartscript.appsflyer.com/onelink-smart-script-latest.js (168)
+[5425:5425:1013/022407.785880:INFO:CONSOLE(180)] "Generated OneLink parameters &af_js_web=true&af_ss_ver=2_9_0&pid=web_to_app&from_alanbase=0&af_ss_ui=true&af_ss_gtm_ui=true", source: https://onelinksmartscript.appsflyer.com/onelink-smart-script-latest.js (180)
+[5425:5425:1013/022407.786243:INFO:CONSOLE(2268)] "Generated OneLink URL https://potrade.onelink.me/oyit?af_js_web=true&af_ss_ver=2_9_0&pid=web_to_app&from_alanbase=0&af_ss_ui=true&af_ss_gtm_ui=true", source: https://onelinksmartscript.appsflyer.com/onelink-smart-script-latest.js (2268)
+[5425:5425:1013/022445.640338:WARNING:controller_impl.cc(1192)] Background download complete, client: 6, completion type: 0, file size:5157
+[5425:5425:1013/022446.113809:WARNING:controller_impl.cc(1192)] Background download complete, client: 6, completion type: 0, file size:265059
+[5425:5425:1013/022448.167243:WARNING:controller_impl.cc(1192)] Background download complete, client: 6, completion type: 0, file size:883094
+[5425:5425:1013/022448.702990:WARNING:controller_impl.cc(1192)] Background download complete, client: 6, completion type: 0, file size:45164
+[5425:5425:1013/022450.563627:WARNING:controller_impl.cc(1192)] Background download complete, client: 6, completion type: 0, file size:2200227
+[5425:5425:1013/022451.012060:WARNING:controller_impl.cc(1192)] Background download complete, client: 6, completion type: 0, file size:4680
+[5425:5425:1013/022451.597087:WARNING:controller_impl.cc(1192)] Background download complete, client: 6, completion type: 0, file size:3844
+[5425:5425:1013/022454.091521:WARNING:controller_impl.cc(1192)] Background download complete, client: 6, completion type: 0, file size:2747168
+[5425:5425:1013/022454.484168:WARNING:controller_impl.cc(1192)] Background download complete, client: 6, completion type: 0, file size:1463571
+[5425:5425:1013/022456.411296:WARNING:controller_impl.cc(1192)] Background download complete, client: 6, completion type: 0, file size:118577
+[5425:5425:1013/022636.720477:WARNING:controller_impl.cc(1192)] Background download complete, client: 6, completion type: 0, file size:68666047
+[5473:5473:1013/024212.612270:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 1 times!
+[5473:5473:1013/032411.059410:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 2 times!
+[5473:5473:1013/032411.068078:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 3 times!
+[5425:5425:1013/234350.373410:ERROR:atom_cache.cc(229)] Add WM_CHANGE_STATE to kAtomsToCache
