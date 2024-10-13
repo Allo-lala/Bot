@@ -22,3 +22,6 @@
 [5473:5473:1013/032411.059410:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 2 times!
 [5473:5473:1013/032411.068078:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 3 times!
 [5425:5425:1013/234350.373410:ERROR:atom_cache.cc(229)] Add WM_CHANGE_STATE to kAtomsToCache
+[5425:5425:1013/234711.729175:WARNING:compositor_animation_observer.cc(66)] CompositorAnimationObserver is active for too long (201.342s) location=Button@ui/views/controls/button/button.cc:691
+[5478:5481:1013/234711.903603:WARNING:sqlite_persistent_store_backend_base.cc(198)] Failed to post task from FlushAndNotifyInBackground@net/extras/sqlite/sqlite_persistent_store_backend_base.cc:248 to client_task_runner_.
+[5425:5425:1013/234711.952626:WARNING:pref_notifier_impl.cc(41)] Pref observer for media_router.cast_allow_all_ips found at shutdown.
