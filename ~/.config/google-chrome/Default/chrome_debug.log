@@ -1,27 +1,129 @@
-[5425:5425:1013/022400.506426:WARNING:chrome_main_delegate.cc(744)] This is Chrome version 127.0.6533.119 (not a warning)
-[5425:5425:1013/022401.079021:INFO:chrome_browser_cloud_management_controller.cc(196)] No machine level policy manager exists.
-[5425:5425:1013/022401.748186:WARNING:browser_management_service.cc(128)] EnterpriseLogoUrl fetch failed with error code -1 and MIME type 
-[5473:5473:1013/022402.856171:WARNING:sandbox_linux.cc(430)] InitializeSandbox() called with multiple threads in process gpu-process.
-[5425:5425:1013/022403.689266:WARNING:bluez_dbus_manager.cc(248)] Floss manager not present, cannot set Floss enable/disable.
-[5425:5425:1013/022404.244079:ERROR:object_proxy.cc(576)] Failed to call method: org.freedesktop.ScreenSaver.GetActive: object_path= /org/freedesktop/ScreenSaver: org.freedesktop.DBus.Error.NotSupported: This method is not implemented
-[5425:5425:1013/022407.785144:INFO:CONSOLE(168)] "This user comes from SRN or custom network", source: https://onelinksmartscript.appsflyer.com/onelink-smart-script-latest.js (168)
-[5425:5425:1013/022407.785880:INFO:CONSOLE(180)] "Generated OneLink parameters &af_js_web=true&af_ss_ver=2_9_0&pid=web_to_app&from_alanbase=0&af_ss_ui=true&af_ss_gtm_ui=true", source: https://onelinksmartscript.appsflyer.com/onelink-smart-script-latest.js (180)
-[5425:5425:1013/022407.786243:INFO:CONSOLE(2268)] "Generated OneLink URL https://potrade.onelink.me/oyit?af_js_web=true&af_ss_ver=2_9_0&pid=web_to_app&from_alanbase=0&af_ss_ui=true&af_ss_gtm_ui=true", source: https://onelinksmartscript.appsflyer.com/onelink-smart-script-latest.js (2268)
-[5425:5425:1013/022445.640338:WARNING:controller_impl.cc(1192)] Background download complete, client: 6, completion type: 0, file size:5157
-[5425:5425:1013/022446.113809:WARNING:controller_impl.cc(1192)] Background download complete, client: 6, completion type: 0, file size:265059
-[5425:5425:1013/022448.167243:WARNING:controller_impl.cc(1192)] Background download complete, client: 6, completion type: 0, file size:883094
-[5425:5425:1013/022448.702990:WARNING:controller_impl.cc(1192)] Background download complete, client: 6, completion type: 0, file size:45164
-[5425:5425:1013/022450.563627:WARNING:controller_impl.cc(1192)] Background download complete, client: 6, completion type: 0, file size:2200227
-[5425:5425:1013/022451.012060:WARNING:controller_impl.cc(1192)] Background download complete, client: 6, completion type: 0, file size:4680
-[5425:5425:1013/022451.597087:WARNING:controller_impl.cc(1192)] Background download complete, client: 6, completion type: 0, file size:3844
-[5425:5425:1013/022454.091521:WARNING:controller_impl.cc(1192)] Background download complete, client: 6, completion type: 0, file size:2747168
-[5425:5425:1013/022454.484168:WARNING:controller_impl.cc(1192)] Background download complete, client: 6, completion type: 0, file size:1463571
-[5425:5425:1013/022456.411296:WARNING:controller_impl.cc(1192)] Background download complete, client: 6, completion type: 0, file size:118577
-[5425:5425:1013/022636.720477:WARNING:controller_impl.cc(1192)] Background download complete, client: 6, completion type: 0, file size:68666047
-[5473:5473:1013/024212.612270:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 1 times!
-[5473:5473:1013/032411.059410:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 2 times!
-[5473:5473:1013/032411.068078:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 3 times!
-[5425:5425:1013/234350.373410:ERROR:atom_cache.cc(229)] Add WM_CHANGE_STATE to kAtomsToCache
-[5425:5425:1013/234711.729175:WARNING:compositor_animation_observer.cc(66)] CompositorAnimationObserver is active for too long (201.342s) location=Button@ui/views/controls/button/button.cc:691
-[5478:5481:1013/234711.903603:WARNING:sqlite_persistent_store_backend_base.cc(198)] Failed to post task from FlushAndNotifyInBackground@net/extras/sqlite/sqlite_persistent_store_backend_base.cc:248 to client_task_runner_.
-[5425:5425:1013/234711.952626:WARNING:pref_notifier_impl.cc(41)] Pref observer for media_router.cast_allow_all_ips found at shutdown.
+[19398:19398:1020/224448.605788:WARNING:chrome_main_delegate.cc(744)] This is Chrome version 130.0.6723.58 (not a warning)
+[19398:19398:1020/224448.938785:INFO:chrome_browser_cloud_management_controller.cc(196)] No machine level policy manager exists.
+[19442:19442:1020/224449.509865:WARNING:sandbox_linux.cc(430)] InitializeSandbox() called with multiple threads in process gpu-process.
+[19442:19442:1020/224449.513096:WARNING:viz_main_impl.cc(85)] VizNullHypothesis is disabled (not a warning)
+[19398:19398:1020/224449.898134:ERROR:object_proxy.cc(576)] Failed to call method: org.freedesktop.ScreenSaver.GetActive: object_path= /org/freedesktop/ScreenSaver: org.freedesktop.DBus.Error.NotSupported: This method is not implemented
+[19398:19398:1020/224452.524696:INFO:CONSOLE(168)] "This user comes from SRN or custom network", source: https://onelinksmartscript.appsflyer.com/onelink-smart-script-latest.js (168)
+[19398:19398:1020/224452.525465:INFO:CONSOLE(180)] "Generated OneLink parameters &af_js_web=true&af_ss_ver=2_9_0&pid=web_to_app&from_alanbase=0&af_ss_ui=true&af_ss_gtm_ui=true", source: https://onelinksmartscript.appsflyer.com/onelink-smart-script-latest.js (180)
+[19398:19398:1020/224452.525952:INFO:CONSOLE(2268)] "Generated OneLink URL https://potrade.onelink.me/oyit?af_js_web=true&af_ss_ver=2_9_0&pid=web_to_app&from_alanbase=0&af_ss_ui=true&af_ss_gtm_ui=true", source: https://onelinksmartscript.appsflyer.com/onelink-smart-script-latest.js (2268)
+[19398:19398:1020/224457.318155:INFO:CONSOLE(287)] "Slow network is detected. See https://www.chromestatus.com/feature/5636954674692096 for more details. Fallback font will be used while loading: https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxK.woff2", source: https://www.gstatic.com/recaptcha/releases/lqsTZ5beIbCkK4uGEGv9JmUR/recaptcha__en.js (287)
+[19398:19398:1020/224457.318253:INFO:CONSOLE(287)] "Slow network is detected. See https://www.chromestatus.com/feature/5636954674692096 for more details. Fallback font will be used while loading: https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBBc4.woff2", source: https://www.gstatic.com/recaptcha/releases/lqsTZ5beIbCkK4uGEGv9JmUR/recaptcha__en.js (287)
+[19398:19398:1020/224504.575154:WARNING:controller_impl.cc(1192)] Background download complete, client: 6, completion type: 0, file size:5157
+[19442:19442:1020/224505.184929:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 1 times!
+[19398:19398:1020/224506.683387:WARNING:controller_impl.cc(1192)] Background download complete, client: 6, completion type: 0, file size:45173
+[19398:19398:1020/224511.485416:WARNING:controller_impl.cc(1192)] Background download complete, client: 6, completion type: 0, file size:2747170
+[19442:19442:1020/224539.840911:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 2 times!
+[19442:19442:1020/224539.874935:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 3 times!
+[19398:19398:1020/224713.251643:INFO:CONSOLE(1)] "[bugsnag] Loaded!", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/224713.748937:INFO:CONSOLE(1)] "You navigate from the same website", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/224713.751707:INFO:CONSOLE(1)] "This user comes from SRN or custom network", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/224713.752163:INFO:CONSOLE(1)] "Generated OneLink parameters &af_js_web=true&af_ss_ver=2_9_0&pid=web_to_app&from_alanbase=0&af_ss_ui=true&af_ss_gtm_ui=true", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/224713.752366:INFO:CONSOLE(1)] "Generated OneLink URL https://potrade.onelink.me/oyit?af_js_web=true&af_ss_ver=2_9_0&pid=web_to_app&from_alanbase=0&af_ss_ui=true&af_ss_gtm_ui=true", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/224715.825563:INFO:CONSOLE(1)] "[STORE] OPTIONS", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/224715.886912:INFO:CONSOLE(1)] "[bugsnag] Loaded!", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/224717.975108:INFO:CONSOLE(1)] "APP: Connecting", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/224718.711609:INFO:CONSOLE(1)] "CHAT: CONNECTED", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/224719.044769:INFO:CONSOLE(1)] "CHAT: USER READY", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/224719.321087:INFO:CONSOLE(1)] "APP: [+] wss://api-msk.po.market", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/224720.056286:INFO:CONSOLE(1)] "APP: Success auth", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/224720.280958:INFO:CONSOLE(1)] "
+ %c %c %c PixiJS 6.4.2 - ✰ WebGL 2 ✰  %c  %c  http://www.pixijs.com/  %c %c ♥%c♥%c♥ 
+
+ background: #ff66a5; padding:5px 0; background: #ff66a5; padding:5px 0; color: #ff66a5; background: #030307; padding:5px 0; background: #ff66a5; padding:5px 0; background: #ffc3dc; padding:5px 0; background: #ff66a5; padding:5px 0; color: #ff2424; background: #fff; padding:5px 0; color: #ff2424; background: #fff; padding:5px 0; color: #ff2424; background: #fff; padding:5px 0;", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/224721.013809:INFO:CONSOLE(2)] "Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently", source: https://pocketoption.com/platform/vendor.js?v=1729326526 (2)
+[19457:19468:1020/224727.731606:WARNING:spdy_session.cc(2975)] Received HEADERS for invalid stream 127
+[19457:19468:1020/224727.764614:WARNING:spdy_session.cc(2975)] Received HEADERS for invalid stream 129
+[19457:19468:1020/224727.767776:WARNING:spdy_session.cc(2975)] Received HEADERS for invalid stream 131
+[19457:19468:1020/224727.770582:WARNING:spdy_session.cc(2975)] Received HEADERS for invalid stream 133
+[19457:19468:1020/224727.773943:WARNING:spdy_session.cc(2975)] Received HEADERS for invalid stream 135
+[19457:19468:1020/224727.774637:WARNING:spdy_session.cc(2975)] Received HEADERS for invalid stream 137
+[19457:19468:1020/224727.775012:WARNING:spdy_session.cc(2975)] Received HEADERS for invalid stream 139
+[19457:19468:1020/224727.776193:WARNING:spdy_session.cc(2975)] Received HEADERS for invalid stream 141
+[19457:19468:1020/224727.777671:WARNING:spdy_session.cc(2975)] Received HEADERS for invalid stream 143
+[19398:19398:1020/224727.917865:INFO:CONSOLE(1)] "[bugsnag] Loaded!", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/224727.983273:INFO:CONSOLE(1)] "You navigate from the same website", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/224727.985029:INFO:CONSOLE(1)] "This user comes from SRN or custom network", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/224727.986153:INFO:CONSOLE(1)] "Generated OneLink parameters &af_js_web=true&af_ss_ver=2_9_0&pid=web_to_app&from_alanbase=0&af_ss_ui=true&af_ss_gtm_ui=true", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/224727.986722:INFO:CONSOLE(1)] "Generated OneLink URL https://potrade.onelink.me/oyit?af_js_web=true&af_ss_ver=2_9_0&pid=web_to_app&from_alanbase=0&af_ss_ui=true&af_ss_gtm_ui=true", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/224728.584629:INFO:CONSOLE(1)] "[STORE] OPTIONS", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/224728.628812:INFO:CONSOLE(1)] "[bugsnag] Loaded!", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/224729.284635:INFO:CONSOLE(2)] "The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. https://goo.gl/7K7WLu", source: https://pocketoption.com/platform/main.js?v=1729326526 (2)
+[19398:19398:1020/224729.285766:INFO:CONSOLE(2)] "The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. https://goo.gl/7K7WLu", source: https://pocketoption.com/platform/vendor.js?v=1729326526 (2)
+[19398:19398:1020/224729.301924:INFO:CONSOLE(1)] "APP: Connecting", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/224730.325619:INFO:CONSOLE(1)] "CHAT: CONNECTED", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/224730.494037:INFO:CONSOLE(1)] "APP: [+] wss://api-spb.po.market", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/224730.608231:INFO:CONSOLE(1)] "CHAT: USER READY", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/224731.195801:INFO:CONSOLE(1)] "APP: Success auth", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/224731.309705:INFO:CONSOLE(1)] "
+ %c %c %c PixiJS 6.4.2 - ✰ WebGL 2 ✰  %c  %c  http://www.pixijs.com/  %c %c ♥%c♥%c♥ 
+
+ background: #ff66a5; padding:5px 0; background: #ff66a5; padding:5px 0; color: #ff66a5; background: #030307; padding:5px 0; background: #ff66a5; padding:5px 0; background: #ffc3dc; padding:5px 0; background: #ff66a5; padding:5px 0; color: #ff2424; background: #fff; padding:5px 0; color: #ff2424; background: #fff; padding:5px 0; color: #ff2424; background: #fff; padding:5px 0;", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/224731.718907:INFO:CONSOLE(2)] "Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently", source: https://pocketoption.com/platform/vendor.js?v=1729326526 (2)
+[19398:19398:1020/224735.942912:ERROR:atom_cache.cc(229)] Add chromium/from-privileged to kAtomsToCache
+[19398:19398:1020/224739.675955:INFO:CONSOLE(1)] "[bugsnag] Loaded!", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/224739.732572:INFO:CONSOLE(1)] "You navigate from the same website", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/224739.732703:INFO:CONSOLE(1)] "This user comes from SRN or custom network", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/224739.732767:INFO:CONSOLE(1)] "Generated OneLink parameters &af_js_web=true&af_ss_ver=2_9_0&pid=web_to_app&from_alanbase=0&af_ss_ui=true&af_ss_gtm_ui=true", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/224739.732824:INFO:CONSOLE(1)] "Generated OneLink URL https://potrade.onelink.me/oyit?af_js_web=true&af_ss_ver=2_9_0&pid=web_to_app&from_alanbase=0&af_ss_ui=true&af_ss_gtm_ui=true", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/224740.248963:INFO:CONSOLE(1)] "[STORE] OPTIONS", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/224740.280095:INFO:CONSOLE(1)] "[bugsnag] Loaded!", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/224740.578171:INFO:CONSOLE(1)] "APP: Connecting", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/224741.749518:INFO:CONSOLE(1)] "CHAT: CONNECTED", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/224742.020410:INFO:CONSOLE(1)] "CHAT: USER READY", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/224742.046096:INFO:CONSOLE(1)] "APP: [+] wss://demo-api-eu.po.market", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/224742.798645:INFO:CONSOLE(1)] "APP: Success auth", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/224742.947552:INFO:CONSOLE(1)] "
+ %c %c %c PixiJS 6.4.2 - ✰ WebGL 2 ✰  %c  %c  http://www.pixijs.com/  %c %c ♥%c♥%c♥ 
+
+ background: #ff66a5; padding:5px 0; background: #ff66a5; padding:5px 0; color: #ff66a5; background: #030307; padding:5px 0; background: #ff66a5; padding:5px 0; background: #ffc3dc; padding:5px 0; background: #ff66a5; padding:5px 0; color: #ff2424; background: #fff; padding:5px 0; color: #ff2424; background: #fff; padding:5px 0; color: #ff2424; background: #fff; padding:5px 0;", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/224743.345231:INFO:CONSOLE(2)] "Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently", source: https://pocketoption.com/platform/vendor.js?v=1729326526 (2)
+[19852:19969:1020/224750.307662:WARNING:sync_reader.cc(176)] ASR: No room in socket buffer.: Broken pipe (32)
+[19398:19398:1020/224750.460765:INFO:CONSOLE(1)] "[bugsnag] Loaded!", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/224750.491366:INFO:CONSOLE(1)] "You navigate from the same website", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/224750.492167:INFO:CONSOLE(1)] "This user comes from SRN or custom network", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/224750.493237:INFO:CONSOLE(1)] "Generated OneLink parameters &af_js_web=true&af_ss_ver=2_9_0&pid=web_to_app&from_alanbase=0&af_ss_ui=true&af_ss_gtm_ui=true", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/224750.493489:INFO:CONSOLE(1)] "Generated OneLink URL https://potrade.onelink.me/oyit?af_js_web=true&af_ss_ver=2_9_0&pid=web_to_app&from_alanbase=0&af_ss_ui=true&af_ss_gtm_ui=true", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/224751.246437:INFO:CONSOLE(1)] "[STORE] OPTIONS", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/224751.269213:INFO:CONSOLE(1)] "[bugsnag] Loaded!", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/224751.456901:INFO:CONSOLE(2)] "The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. https://goo.gl/7K7WLu", source: https://pocketoption.com/platform/main.js?v=1729326526 (2)
+[19398:19398:1020/224751.458140:INFO:CONSOLE(2)] "The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. https://goo.gl/7K7WLu", source: https://pocketoption.com/platform/vendor.js?v=1729326526 (2)
+[19398:19398:1020/224751.474173:INFO:CONSOLE(1)] "APP: Connecting", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/224752.540089:INFO:CONSOLE(1)] "CHAT: CONNECTED", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/224752.548576:INFO:CONSOLE(1)] "APP: [+] wss://demo-api-eu.po.market", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/224752.881918:INFO:CONSOLE(1)] "CHAT: USER READY", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/224753.285511:INFO:CONSOLE(1)] "APP: Success auth", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/224753.395650:INFO:CONSOLE(1)] "
+ %c %c %c PixiJS 6.4.2 - ✰ WebGL 2 ✰  %c  %c  http://www.pixijs.com/  %c %c ♥%c♥%c♥ 
+
+ background: #ff66a5; padding:5px 0; background: #ff66a5; padding:5px 0; color: #ff66a5; background: #030307; padding:5px 0; background: #ff66a5; padding:5px 0; background: #ffc3dc; padding:5px 0; background: #ff66a5; padding:5px 0; color: #ff2424; background: #fff; padding:5px 0; color: #ff2424; background: #fff; padding:5px 0; color: #ff2424; background: #fff; padding:5px 0;", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/224753.871181:INFO:CONSOLE(2)] "Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently", source: https://pocketoption.com/platform/vendor.js?v=1729326526 (2)
+[19398:19398:1020/225529.797323:INFO:CONSOLE(1)] "CHAT: DISCONNECTED - ping timeout", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19457:19468:1020/225538.898834:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -101
+[19398:19398:1020/225540.335744:INFO:CONSOLE(1)] "CHAT: CONNECTED", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/225540.649845:INFO:CONSOLE(1)] "CHAT: USER READY", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19852:20618:1020/225652.375560:WARNING:sync_reader.cc(176)] ASR: No room in socket buffer.: Broken pipe (32)
+[19852:19852:1020/231012.657183:WARNING:sync_reader.cc(176)] ASR: No room in socket buffer.: Broken pipe (32)
+[19852:19852:1020/231202.630723:WARNING:sync_reader.cc(176)] ASR: No room in socket buffer.: Broken pipe (32)
+[19852:19852:1020/231442.606841:WARNING:sync_reader.cc(176)] ASR: No room in socket buffer.: Broken pipe (32)
+[19398:19398:1020/233802.852977:INFO:CONSOLE(1)] "CHAT: DISCONNECTED - ping timeout", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/233810.692519:INFO:CONSOLE(1)] "CHAT: CONNECTED", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/233810.967899:INFO:CONSOLE(1)] "CHAT: USER READY", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/234000.581716:INFO:CONSOLE(1)] "APP: [-] wss://demo-api-eu.po.market", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/234000.933816:INFO:CONSOLE(1)] "APP: try connected", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/234000.934396:INFO:CONSOLE(1)] "APP: Connecting", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/234002.962055:INFO:CONSOLE(1)] "APP: [+] wss://demo-api-eu.po.market", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/234003.776808:INFO:CONSOLE(1)] "APP: Success auth", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19457:19468:1020/234258.790387:ERROR:ssl_client_socket_impl.cc(878)] handshake failed; returned -1, SSL error code 1, net_error -100
+[19398:19398:1020/234417.601424:INFO:CONSOLE(1)] "CHAT: DISCONNECTED - ping timeout", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/234438.774319:INFO:CONSOLE(1)] "CHAT: CONNECT ERROR", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/234454.283323:INFO:CONSOLE(1)] "CHAT: CONNECTED", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/234454.744223:INFO:CONSOLE(1)] "CHAT: USER READY", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/234543.572432:INFO:CONSOLE(1)] "CHAT: DISCONNECTED - ping timeout", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/234604.575682:INFO:CONSOLE(1)] "CHAT: CONNECT ERROR", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/234612.428142:INFO:CONSOLE(1)] "APP: [-] wss://demo-api-eu.po.market", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/234612.793915:INFO:CONSOLE(1)] "APP: try connected", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/234612.794684:INFO:CONSOLE(1)] "APP: Connecting", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/234612.810556:INFO:CONSOLE(1)] "CHAT: CONNECTED", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/234613.049666:INFO:CONSOLE(1)] "CHAT: USER READY", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/234614.624933:INFO:CONSOLE(1)] "APP: [+] wss://demo-api-eu.po.market", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)
+[19398:19398:1020/234616.293408:INFO:CONSOLE(1)] "APP: Success auth", source: https://pocketoption.com/js/bugsnag-7.min.js?ver=7.8.3 (1)

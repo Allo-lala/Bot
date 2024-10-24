@@ -8,7 +8,7 @@ from selenium.webdriver.common.by import By
 
 from utils import companies, get_driver
 
-BASE_URL = 'https://pocketoption.com'  # change if PO is blocked in your country
+BASE_URL = 'https://pocketoption.com' 
 LENGTH_STACK_MIN = 460
 LENGTH_STACK_MAX = 1000  # 4000
 PERIOD = 60  # PERIOD on the graph

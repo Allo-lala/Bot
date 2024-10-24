@@ -1,2 +1,3 @@
-2024/10/13-02:24:03.895 1547 Creating DB /home/afandi/Downloads/pocket_option_trading_bot-main/~/.config/google-chrome/Default/Default/shared_proto_db/metadata since it was missing.
-2024/10/13-02:24:04.033 1547 Reusing MANIFEST /home/afandi/Downloads/pocket_option_trading_bot-main/~/.config/google-chrome/Default/Default/shared_proto_db/metadata/MANIFEST-000001
+2024/10/20-22:44:49.489 4bdd Reusing MANIFEST /home/afandi/Downloads/pocket_option_trading_bot-main/~/.config/google-chrome/Default/Default/shared_proto_db/metadata/MANIFEST-000001
+2024/10/20-22:44:49.490 4bdd Recovering log #3
+2024/10/20-22:44:49.493 4bdd Reusing old log /home/afandi/Downloads/pocket_option_trading_bot-main/~/.config/google-chrome/Default/Default/shared_proto_db/metadata/000003.log 
