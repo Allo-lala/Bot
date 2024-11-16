@@ -87,9 +87,8 @@ companies = {
 
 
 def get_value(quote, param='close'):
-    # normally, quotes[-1].close works on MacOs, Linux and Windows with 'en_US' locale
-    # this method is for Windows with other locales
-
+    
+    
     try:
         value = getattr(quote, param)
     except Exception as e:

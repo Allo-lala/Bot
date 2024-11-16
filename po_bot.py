@@ -10,21 +10,21 @@ from utils import companies, get_driver
 
 BASE_URL = 'https://pocketoption.com' 
 LENGTH_STACK_MIN = 460
-LENGTH_STACK_MAX = 1000  # 4000
-PERIOD = 60  # PERIOD on the graph
-TIME = 1  # quotes
+LENGTH_STACK_MAX = 1000  
+PERIOD = 60  
+TIME = 1  
 SMA_LONG = 50
 SMA_SHORT = 8
-PERCENTAGE = 0.91  # create orders more than PERCENTAGE
-STACK = {}  # {1687021970: 0.87, 1687021971: 0.88}
-ACTIONS = {}  # dict of {datetime: value} when an action has been made
+PERCENTAGE = 0.91  
+STACK = {}  
+ACTIONS = {}  
 MAX_ACTIONS = 1
-ACTIONS_SECONDS = PERIOD - 1  # how long action still in ACTIONS
+ACTIONS_SECONDS = PERIOD - 1  
 LAST_REFRESH = datetime.now()
 CURRENCY = None
 CURRENCY_CHANGE = False
 CURRENCY_CHANGE_DATE = datetime.now()
-HISTORY_TAKEN = False  # becomes True when history is taken. History length is 900-1800
+HISTORY_TAKEN = False  
 CLOSED_TRADES_LENGTH = 3
 MODEL = None
 SCALER = None
@@ -45,9 +45,9 @@ NUMBERS = {
     '9': '3',
 }
 IS_AMOUNT_SET = True
-AMOUNTS = []  # 1, 3, 8, 18, 39, 82, 172
-EARNINGS = 15  # euros.
-MARTINGALE_COEFFICIENT = 2.0  # everything < 2 have worse profitability
+AMOUNTS = []  
+EARNINGS = 15  
+MARTINGALE_COEFFICIENT = 2.0  
 
 driver = get_driver()
 
@@ -60,14 +60,13 @@ def load_web_driver():
 def change_currency():
     current_symbol = driver.find_element(by=By.CLASS_NAME, value='current-symbol')
     current_symbol.click()
-    # time.sleep(random.random())  # 0-1 sec
     currencies = driver.find_elements(By.XPATH, "//li[contains(., '92%')]")
     if currencies:
-        # click random currency
+        # click any currency
         while True:
             currency = random.choice(currencies)
             if CURRENCY not in currency.text:
-                break  # avoid repeats
+                break 
         currency.click()
     else:
         pass
@@ -87,7 +86,6 @@ def do_action(signal):
 
     if action:
         if len(ACTIONS) >= MAX_ACTIONS:
-            # print(f"Max actions reached, don't do a {signal} action")
             action = False
 
     if action:
@@ -136,8 +134,8 @@ def check_values(stack):
         print(e)
 
     time_style = driver.find_element(by=By.CSS_SELECTOR, value='#put-call-buttons-chart-1 > div > div.blocks-wrap > div.block.block--expiration-inputs > div.block__control.control > div.control-buttons__wrapper > div > a > div > div > svg')
-    if 'exp-mode-2.svg' in time_style.get_attribute('data-src'):  # should be 'exp-mode-2.svg'
-        time_style.click()  # switch time style
+    if 'exp-mode-2.svg' in time_style.get_attribute('data-src'):  # switch time style
+        time_style.click()  
 
     global IS_AMOUNT_SET, AMOUNTS, INIT_DEPOSIT
 
@@ -166,15 +164,15 @@ def check_values(stack):
                 amount = driver.find_element(by=By.CSS_SELECTOR, value='#put-call-buttons-chart-1 > div > div.blocks-wrap > div.block.block--bet-amount > div.block__control.control > div.control__value.value.value--several-items > div > input[type=text]')
                 amount_value = int(amount.get_attribute('value'))
                 base = '#modal-root > div > div > div > div > div.trading-panel-modal__in > div.virtual-keyboard > div > div:nth-child(%s) > div'
-                if '$0' != last_split[4]:  # win
+                if '$0' != last_split[4]:  
                     if amount_value > 1:
                         amount.click()
                         hand_delay()
                         driver.find_element(by=By.CSS_SELECTOR, value=base % NUMBERS['1']).click()
-                        AMOUNTS = get_amounts(get_deposit_value(deposit))  # refresh amounts
-                elif '$0' != last_split[3]:  # draw
+                        AMOUNTS = get_amounts(get_deposit_value(deposit))  
+                elif '$0' != last_split[3]:  
                     pass
-                else:  # lose
+                else:  
                     amount.click()
                     time.sleep(random.choice([0.6, 0.7, 0.8, 0.9, 1.0, 1.1]))
                     if amount_value in AMOUNTS and AMOUNTS.index(amount_value) + 1 < len(AMOUNTS):
@@ -210,9 +208,9 @@ def websocket_log(stack):
         pass
 
     if CURRENCY_CHANGE and CURRENCY_CHANGE_DATE < datetime.now() - timedelta(seconds=5):
-        stack = {}  # drop stack when currency changed
-        HISTORY_TAKEN = False  # take history again
-        driver.refresh()  # refresh page to cut off unwanted signals
+        stack = {}  
+        HISTORY_TAKEN = False  
+        driver.refresh()  
         CURRENCY_CHANGE = False
         MODEL = None
         INIT_DEPOSIT = None
@@ -248,7 +246,7 @@ def websocket_log(stack):
                     stack[int(timestamp)] = value
             elif len(stack) > LENGTH_STACK_MAX:
                 print(f"Len > {LENGTH_STACK_MAX}!!")
-                stack = {}  # refresh then
+                stack = {}  
             if len(stack) >= LENGTH_STACK_MIN:
                 check_values(stack)
     return stack

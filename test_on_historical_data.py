@@ -8,15 +8,9 @@ from stock_indicators.indicators.common.quote import Quote
 
 from utils import get_value
 
-"""
-This script allows you to test your strategy on historical data
-Historical data is in data_1m and data_5m folders
-Replace put condition and call condition
-Replace [-1] with [-i] and [-2] with [-i-1]
-"""
 
-TIMEFRAME = 1  # minutes
-EXPIRATION = 1  # candles
+TIMEFRAME = 1  # Time
+EXPIRATION = 1  # candle
 
 
 def get_csv_files():
@@ -29,14 +23,14 @@ def get_csv_files():
 
 
 def get_quotes(filename):
-    # get quotes from csv file
+
     quotes = []
     with open(f'data_{TIMEFRAME}m/{filename}') as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
         for row in csv_reader:
             try:
                 timestamp = datetime.fromtimestamp(float(row[1]))
-            except ValueError:  # pass header
+            except ValueError: 
                 continue
             try:
                 quotes.append(Quote(
@@ -46,7 +40,7 @@ def get_quotes(filename):
                     low=row[5],
                     close=row[3],
                     volume=None))
-            except ValueError:  # on Windows and non-en_US locale
+            except ValueError:  
                 quotes.append(Quote(
                     date=timestamp,
                     open=str(row[2]).replace('.', ','),
@@ -71,7 +65,7 @@ def check_indicators(quotes):
     for i in range(1, len(quotes) - 40, 1):
         try:
 
-            # put condition
+            # condition
             if sma_short[-i-1].sma > sma_long[-i-1].sma and sma_short[-i].sma < sma_long[-i].sma:
                 if get_value(quotes[-i]) < get_value(quotes[-i-1]) < get_value(quotes[-i-2]):
 
@@ -85,7 +79,6 @@ def check_indicators(quotes):
                             orders += 1
                             loses += 1
 
-            # call condition
             if sma_short[-i-1].sma < sma_long[-i-1].sma and sma_short[-i].sma > sma_long[-i].sma:
                 if get_value(quotes[-i]) > get_value(quotes[-i-1]) > get_value(quotes[-i-2]):
 
