@@ -1,6 +1,14 @@
-2024/11/10-15:35:38.009 1373 Creating DB /home/afandi/Downloads/pocket_option_trading_bot-main/~/.config/google-chrome/Default/Default/IndexedDB/https_pocketoption.com_0.indexeddb.leveldb since it was missing.
-2024/11/10-15:35:38.078 1373 Reusing MANIFEST /home/afandi/Downloads/pocket_option_trading_bot-main/~/.config/google-chrome/Default/Default/IndexedDB/https_pocketoption.com_0.indexeddb.leveldb/MANIFEST-000001
-2024/11/10-15:35:38.177 1376 Level-0 table #5: started
-2024/11/10-15:35:38.202 1376 Level-0 table #5: 673 bytes OK
-2024/11/10-15:35:38.237 1376 Delete type=0 #3
-2024/11/10-15:35:38.238 1373 Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)
+2024/12/03-23:07:31.485 1c52 Reusing MANIFEST /home/afandi/Downloads/pocket_option_trading_bot-main/~/.config/google-chrome/Default/Default/IndexedDB/https_pocketoption.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/12/03-23:07:31.486 1c52 Recovering log #15
+2024/12/03-23:07:31.488 1c52 Reusing old log /home/afandi/Downloads/pocket_option_trading_bot-main/~/.config/google-chrome/Default/Default/IndexedDB/https_pocketoption.com_0.indexeddb.leveldb/000015.log 
+2024/12/03-23:07:31.489 1c52 Delete type=2 #14
+2024/12/03-23:07:31.607 1c50 Level-0 table #20: started
+2024/12/03-23:07:31.632 1c50 Level-0 table #20: 2056 bytes OK
+2024/12/03-23:07:31.669 1c50 Delete type=0 #15
+2024/12/03-23:07:31.670 1c50 Manual compaction at level-0 from '\x00\x07\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x08\x00\x00\x00' @ 0 : 0; will stop at '\x00\x07\x00\x00\x05' @ 442 : 1
+2024/12/03-23:07:31.670 1c50 Compacting 1@0 + 1@1 files
+2024/12/03-23:07:31.693 1c50 Generated table #21@0: 147 keys, 2599 bytes
+2024/12/03-23:07:31.693 1c50 Compacted 1@0 + 1@1 files => 2599 bytes
+2024/12/03-23:07:31.728 1c50 compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/12/03-23:07:31.729 1c50 Delete type=2 #20
+2024/12/03-23:07:31.729 1c50 Manual compaction at level-0 from '\x00\x07\x00\x00\x05' @ 442 : 1 .. '\x00\x08\x00\x00\x00' @ 0 : 0; will stop at (end)
