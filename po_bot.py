@@ -257,3 +257,5 @@ def websocket_log(stack):
 load_web_driver()
 while True:
     STACK = websocket_log(STACK)
+
+

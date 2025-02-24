@@ -1,16 +1,23 @@
 import csv
 import os
-from datetime import datetime
+from datetime import datetime, timedelta
 
+import yfinance as yf
 from stock_indicators import indicators
 from stock_indicators.indicators.common.enums import Match
 from stock_indicators.indicators.common.quote import Quote
 
 from utils import get_value
 
+"""
+This script allows you to test your strategy on historical data
+Historical data is in data_1m and data_5m folders
+Replace put condition and call condition
+Replace [-1] with [-i] and [-2] with [-i-1]
+"""
 
-TIMEFRAME = 1  # Time
-EXPIRATION = 1  # candle
+TIMEFRAME = 1  # minutes
+EXPIRATION = 1  # candles
 
 
 def get_csv_files():
@@ -23,14 +30,14 @@ def get_csv_files():
 
 
 def get_quotes(filename):
-
+    # get quotes from csv file
     quotes = []
     with open(f'data_{TIMEFRAME}m/{filename}') as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
         for row in csv_reader:
             try:
                 timestamp = datetime.fromtimestamp(float(row[1]))
-            except ValueError: 
+            except ValueError:  # pass header
                 continue
             try:
                 quotes.append(Quote(
@@ -40,7 +47,7 @@ def get_quotes(filename):
                     low=row[5],
                     close=row[3],
                     volume=None))
-            except ValueError:  
+            except ValueError:  # on Windows and non-en_US locale
                 quotes.append(Quote(
                     date=timestamp,
                     open=str(row[2]).replace('.', ','),
@@ -50,6 +57,23 @@ def get_quotes(filename):
                     volume=None))
             except Exception as e:
                 print(e)
+    return quotes
+
+
+def get_quotes_yfinance(asset):
+    end_date = str((datetime.now() - timedelta(days=1)).date())
+    start_date = str((datetime.now() - timedelta(days=8)).date())
+    downloaded_data = yf.download(asset, start=start_date, end=end_date, interval='1m')
+    quotes = []
+    for i, row in downloaded_data.iterrows():
+        quotes.append(Quote(
+            date=datetime.strptime(str(i)[:19], '%Y-%m-%d %H:%M:%S'),
+            open=row['Open'].values[0],
+            high=row['High'].values[0],
+            low=row['Low'].values[0],
+            close=row['Close'].values[0],
+            volume=None)
+        )
     return quotes
 
 
@@ -65,7 +89,7 @@ def check_indicators(quotes):
     for i in range(1, len(quotes) - 40, 1):
         try:
 
-            # condition
+            # put condition
             if sma_short[-i-1].sma > sma_long[-i-1].sma and sma_short[-i].sma < sma_long[-i].sma:
                 if get_value(quotes[-i]) < get_value(quotes[-i-1]) < get_value(quotes[-i-2]):
 
@@ -79,6 +103,7 @@ def check_indicators(quotes):
                             orders += 1
                             loses += 1
 
+            # call condition
             if sma_short[-i-1].sma < sma_long[-i-1].sma and sma_short[-i].sma > sma_long[-i].sma:
                 if get_value(quotes[-i]) > get_value(quotes[-i-1]) > get_value(quotes[-i-2]):
 
@@ -106,10 +131,14 @@ def main():
     all_draws = 0
     all_loses = 0
 
-    for csv_file in csv_files:
-        quotes = get_quotes(csv_file)
+    # for csv_file in csv_files:
+    #     quotes = get_quotes(csv_file)
+
+    for asset in ['AUDUSD=X']:  # 'AUDUSD=X', 'EURUSD=X', 'AUDCAD=X', 'EURCHF=X', 'CADCHF=X', 'AUDCHF=X', 'EURAUD=X', 'EURGBP=X', 'EURJPY=X'
+        quotes = get_quotes_yfinance(asset)
+
         orders, wins, draws, loses = check_indicators(quotes)
-        print(csv_file, 'Orders:', orders, 'Wins:', wins, 'Loses:', loses, 'Win percent:', round(wins * 100 / orders, 2), '%')
+        # print(csv_file, 'Orders:', orders, 'Wins:', wins, 'Loses:', loses, 'Win percent:', round(wins * 100 / orders, 2), '%')
 
         all_orders += orders
         all_wins += wins
